@@ -1,0 +1,18 @@
+# Versiones validadas para este proyecto (ver README.md, seccion "Nota tecnica: pin de versiones")
+# El pin de scikit-learn y xgboost es IMPORTANTE: combinaciones mas nuevas rompen
+# silenciosamente el Pipeline de sklearn con XGBoost (CV devuelve NaN) o SHAP TreeExplainer.
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn==1.5.2
+xgboost==2.0.3
+lifelines>=0.28
+shap==0.49.1
+imbalanced-learn==0.14.2
+joblib>=1.3
+
+# Solo si vas a regenerar el notebook (build_notebook.py) o ejecutarlo fuera de Jupyter:
+# nbformat>=5.9
+# nbclient>=0.9
+# ipykernel>=6.29

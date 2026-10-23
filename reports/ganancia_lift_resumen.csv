@@ -1,0 +1,4 @@
+modelo,lift_decil1,ganancia_10,ganancia_30
+Regresión Logística,2.75,27.4,65.3
+XGBoost,2.75,27.4,65.1
+MLP,2.73,27.2,67.0

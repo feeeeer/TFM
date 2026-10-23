@@ -1,0 +1,218 @@
+{
+  "n_train": 5282,
+  "n_test": 1761,
+  "prevalencia_train": 0.2654297614539947,
+  "prevalencia_test": 0.26519023282226006,
+  "economia_20pct": {
+    "contactados": 352,
+    "modelo": 92246.54113973065,
+    "aleatorio": 32508.855469672744,
+    "ic95_modelo": [
+      83716.90456527816,
+      101151.9804173141
+    ],
+    "ic95_aleatorio": [
+      29373.164996542593,
+      35720.56156043035
+    ],
+    "ic95_diferencia": [
+      52484.44768336984,
+      67032.75684015386
+    ],
+    "valor_total_en_riesgo": 189051.6320514026,
+    "clientes_que_abandonan_test": 467,
+    "churners_capturados_modelo": 216,
+    "churners_esperados_aleatorio": 93.34696195343555
+  },
+  "economia_sensibilidad_coste": [
+    {
+      "coste": 5,
+      "modelo": 95766.54113973065,
+      "aleatorio": 36028.855469672744,
+      "contactar_a_todos": 180246.6320514026
+    },
+    {
+      "coste": 15,
+      "modelo": 92246.54113973065,
+      "aleatorio": 32508.855469672744,
+      "contactar_a_todos": 162636.6320514026
+    },
+    {
+      "coste": 50,
+      "modelo": 79926.54113973065,
+      "aleatorio": 20188.855469672744,
+      "contactar_a_todos": 101001.63205140259
+    },
+    {
+      "coste": 100,
+      "modelo": 62326.541139730645,
+      "aleatorio": 2588.855469672744,
+      "contactar_a_todos": 12951.632051402587
+    }
+  ],
+  "clv": {
+    "media": 1294.918570919089,
+    "mediana": 1341.9427177387518,
+    "p10": 447.9,
+    "p90": 2128.1,
+    "asimetria": 0.09338231317295213,
+    "top20_pct_del_valor": 0.3333425184679897
+  },
+  "train_val_test": [
+    {
+      "modelo": "Regresión Logística",
+      "conjunto": "Train",
+      "auc": 0.8446,
+      "precision": 0.5136,
+      "recall": 0.7939,
+      "f1": 0.6237,
+      "brier": 0.1652
+    },
+    {
+      "modelo": "Regresión Logística",
+      "conjunto": "Validación (CV 5-fold)",
+      "auc": 0.841,
+      "precision": 0.513,
+      "recall": 0.7896,
+      "f1": 0.6219,
+      "brier": 0.1667
+    },
+    {
+      "modelo": "Regresión Logística",
+      "conjunto": "Test",
+      "auc": 0.8413,
+      "precision": 0.5132,
+      "recall": 0.7923,
+      "f1": 0.6229,
+      "brier": 0.1669
+    },
+    {
+      "modelo": "XGBoost",
+      "conjunto": "Train",
+      "auc": 0.8651,
+      "precision": 0.5497,
+      "recall": 0.7974,
+      "f1": 0.6508,
+      "brier": 0.1476
+    },
+    {
+      "modelo": "XGBoost",
+      "conjunto": "Validación (CV 5-fold)",
+      "auc": 0.8434,
+      "precision": 0.5272,
+      "recall": 0.766,
+      "f1": 0.6246,
+      "brier": 0.157
+    },
+    {
+      "modelo": "XGBoost",
+      "conjunto": "Test",
+      "auc": 0.8415,
+      "precision": 0.5339,
+      "recall": 0.7923,
+      "f1": 0.6379,
+      "brier": 0.1578
+    },
+    {
+      "modelo": "MLP",
+      "conjunto": "Train",
+      "auc": 0.8488,
+      "precision": 0.5248,
+      "recall": 0.7996,
+      "f1": 0.6337,
+      "brier": 0.1633
+    },
+    {
+      "modelo": "MLP",
+      "conjunto": "Validación (CV 5-fold)",
+      "auc": 0.8363,
+      "precision": 0.5184,
+      "recall": 0.7725,
+      "f1": 0.6205,
+      "brier": 0.1676
+    },
+    {
+      "modelo": "MLP",
+      "conjunto": "Test",
+      "auc": 0.8436,
+      "precision": 0.514,
+      "recall": 0.7837,
+      "f1": 0.6209,
+      "brier": 0.1652
+    }
+  ],
+  "calibracion": [
+    {
+      "modelo": "MLP",
+      "version": "calibrado (isotonic)",
+      "prob_media": 0.2645,
+      "brier": 0.1377,
+      "ece": 0.0261,
+      "auc": 0.8433
+    },
+    {
+      "modelo": "MLP",
+      "version": "calibrado (sigmoid)",
+      "prob_media": 0.2651,
+      "brier": 0.1378,
+      "ece": 0.027,
+      "auc": 0.8437
+    },
+    {
+      "modelo": "MLP",
+      "version": "sin calibrar (SMOTE)",
+      "prob_media": 0.4106,
+      "brier": 0.1652,
+      "ece": 0.1454,
+      "auc": 0.8436
+    },
+    {
+      "modelo": "Regresión Logística",
+      "version": "calibrado (isotonic)",
+      "prob_media": 0.2658,
+      "brier": 0.1381,
+      "ece": 0.0265,
+      "auc": 0.8414
+    },
+    {
+      "modelo": "Regresión Logística",
+      "version": "calibrado (sigmoid)",
+      "prob_media": 0.2657,
+      "brier": 0.1382,
+      "ece": 0.0114,
+      "auc": 0.8417
+    },
+    {
+      "modelo": "Regresión Logística",
+      "version": "sin calibrar (SMOTE)",
+      "prob_media": 0.4121,
+      "brier": 0.1669,
+      "ece": 0.1469,
+      "auc": 0.8413
+    },
+    {
+      "modelo": "XGBoost",
+      "version": "calibrado (isotonic)",
+      "prob_media": 0.2635,
+      "brier": 0.1365,
+      "ece": 0.0138,
+      "auc": 0.844
+    },
+    {
+      "modelo": "XGBoost",
+      "version": "calibrado (sigmoid)",
+      "prob_media": 0.2641,
+      "brier": 0.1376,
+      "ece": 0.0181,
+      "auc": 0.8426
+    },
+    {
+      "modelo": "XGBoost",
+      "version": "sin calibrar (SMOTE)",
+      "prob_media": 0.3849,
+      "brier": 0.1578,
+      "ece": 0.1197,
+      "auc": 0.8415
+    }
+  ]
+}

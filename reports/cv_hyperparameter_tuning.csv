@@ -1,0 +1,4 @@
+modelo,mejor_auc_cv_mean,mejores_hiperparametros
+Regresion_Logistica,0.8414,"{""clf__C"": 0.1, ""clf__penalty"": ""l2"", ""clf__solver"": ""lbfgs""}"
+XGBoost,0.8438,"{""clf__subsample"": 0.8, ""clf__n_estimators"": 300, ""clf__max_depth"": 3, ""clf__learning_rate"": 0.03, ""clf__colsample_bytree"": 0.8}"
+MLP,0.8367,"{""clf__learning_rate_init"": 0.001, ""clf__hidden_layer_sizes"": [32], ""clf__alpha"": 0.0001}"
