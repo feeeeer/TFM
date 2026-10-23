@@ -1,0 +1,142 @@
+{
+  "eda": {
+    "churn_por_tenure": {
+      "0-6": 0.5294,
+      "7-12": 0.3589,
+      "13-24": 0.2871,
+      "25-36": 0.2163,
+      "37-48": 0.1903,
+      "49-60": 0.1442,
+      "61-72": 0.0661
+    },
+    "churn_por_nservicios": {
+      "0": 0.2076,
+      "1": 0.3446,
+      "2": 0.3772,
+      "3": 0.3129,
+      "4": 0.2572,
+      "5": 0.2175,
+      "6": 0.1167,
+      "7": 0.0529
+    },
+    "churn_internet_contrato": {
+      "Month-to-month": {
+        "DSL": 0.3222,
+        "Fiber optic": 0.5461,
+        "No": 0.1889
+      },
+      "One year": {
+        "DSL": 0.093,
+        "Fiber optic": 0.1929,
+        "No": 0.0247
+      },
+      "Two year": {
+        "DSL": 0.0191,
+        "Fiber optic": 0.0723,
+        "No": 0.0078
+      }
+    },
+    "churn_pago_papel": {
+      "No": {
+        "Bank transfer (automatic)": 0.1103,
+        "Credit card (automatic)": 0.1,
+        "Electronic check": 0.3274,
+        "Mailed check": 0.1349
+      },
+      "Yes": {
+        "Bank transfer (automatic)": 0.2088,
+        "Credit card (automatic)": 0.1905,
+        "Electronic check": 0.4977,
+        "Mailed check": 0.2729
+      }
+    },
+    "mediana_cargos_contrato_churn": [
+      {
+        "Contract": "Month-to-month",
+        "Churn": "No",
+        "MonthlyCharges": 64.95
+      },
+      {
+        "Contract": "Month-to-month",
+        "Churn": "Yes",
+        "MonthlyCharges": 79.05
+      },
+      {
+        "Contract": "One year",
+        "Churn": "No",
+        "MonthlyCharges": 64.85
+      },
+      {
+        "Contract": "One year",
+        "Churn": "Yes",
+        "MonthlyCharges": 95.05
+      },
+      {
+        "Contract": "Two year",
+        "Churn": "No",
+        "MonthlyCharges": 63.3
+      },
+      {
+        "Contract": "Two year",
+        "Churn": "Yes",
+        "MonthlyCharges": 97.28
+      }
+    ]
+  },
+  "average_precision": {
+    "Regresion_Logistica": 0.6369,
+    "XGBoost": 0.6434,
+    "MLP": 0.6414
+  },
+  "prevalencia_test": 0.26519023282226006,
+  "umbral": {
+    "coste_contacto": 15.0,
+    "tasa_exito": 0.3,
+    "umbral_max_beneficio": 0.08,
+    "beneficio_max": 167825.44537603663,
+    "clientes_contactados_umbral_opt": 1315,
+    "beneficio_umbral_0.5": 138113.11014762893,
+    "contactados_0.5": 693,
+    "umbral_max_F1": 0.5,
+    "beneficio_umbral_maxF1": 138113.11014762893,
+    "beneficio_contactar_a_todos": 162558.59900435922,
+    "n_test": 1761
+  },
+  "umbral_por_coste": [
+    {
+      "coste_contacto": 15,
+      "umbral_optimo": 0.08,
+      "beneficio_max": 167825.44537603663,
+      "pct_contactados": 74.7,
+      "beneficio_umbral_0_5": 138113.11014762893,
+      "beneficio_contactar_a_todos": 162558.59900435922
+    },
+    {
+      "coste_contacto": 50,
+      "umbral_optimo": 0.26,
+      "beneficio_max": 125819.85254780352,
+      "pct_contactados": 56.2,
+      "beneficio_umbral_0_5": 113858.11014762893,
+      "beneficio_contactar_a_todos": 100923.59900435919
+    },
+    {
+      "coste_contacto": 100,
+      "umbral_optimo": 0.45,
+      "beneficio_max": 80314.87781378359,
+      "pct_contactados": 42.3,
+      "beneficio_umbral_0_5": 79208.11014762893,
+      "beneficio_contactar_a_todos": 12873.5990043592
+    },
+    {
+      "coste_contacto": 200,
+      "umbral_optimo": 0.71,
+      "beneficio_max": 25556.523498516268,
+      "pct_contactados": 20.8,
+      "beneficio_umbral_0_5": 9908.110147628937,
+      "beneficio_contactar_a_todos": -163226.40099564078
+    }
+  ],
+  "shap_tenure_cambio_signo_meses": [
+    12.0
+  ]
+}

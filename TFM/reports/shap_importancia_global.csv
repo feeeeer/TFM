@@ -1,0 +1,16 @@
+feature,mean_abs_shap
+HighRiskContract,0.60130805
+tenure,0.51645666
+InternetService_Fiber optic,0.2486503
+MonthlyCharges,0.23687999
+PaperlessBilling,0.20823719
+Contract_Two year,0.2044299
+PaymentMethod_Electronic check,0.18385299
+OnlineSecurity,0.14962758
+InternetService_No,0.14507449
+AvgMonthlySpend,0.13989602
+Dependents,0.111427754
+TechSupport,0.108345024
+TotalCharges,0.048124995
+TenureGroup_48-72m,0.021712052
+Contract_One year,0.020532636

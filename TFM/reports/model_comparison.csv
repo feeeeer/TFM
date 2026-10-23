@@ -1,0 +1,4 @@
+modelo,accuracy,precision,recall,f1,auc_roc
+Regresion_Logistica,0.7456,0.5132,0.7923,0.6229,0.8413
+XGBoost,0.7615,0.5339,0.7923,0.6379,0.8415
+MLP,0.7462,0.514,0.7837,0.6209,0.8436
